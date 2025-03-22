@@ -11,7 +11,7 @@ SIMULATOR_SDK_PATH=$(xcrun --sdk iphonesimulator --show-sdk-path)
 BUILD_IOS_SIMULATOR="ON"
 
 ARCHS_DEVICES_MACOS="x86_64;arm64"
-BUILD_MACOS="ON"
+BUILD_MACOS="NO"
 
 
 cd opus
@@ -69,7 +69,7 @@ FRAMEWORK_SIMULATOR="ios-simulator/Opus.framework"
 xcodebuild -create-xcframework \
 -framework "$FRAMEWORK_DEVICE" \
 -framework "$FRAMEWORK_SIMULATOR" \
--output opus.xcframework
+-output Opus.xcframework
 
 rm -rf ios ios-simulator
 
