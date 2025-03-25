@@ -58,11 +58,14 @@ class SimpleOpusEncoder {
 
       if (error.value == OPUS_OK) {
         if (bitrate != null) {
-          opus.opus_encoder_ctl_int(encoder, OPUS_SET_VBR_REQUEST, 0);
-          int ret1 = opus.opus_encoder_ctl_int(
+          int ret1 =
+              opus.opus_encoder_ctl_int(encoder, OPUS_SET_VBR_REQUEST, 1);
+          int ret2 = opus.opus_encoder_ctl_int(
               encoder, OPUS_SET_BITRATE_REQUEST, bitrate);
           if (ret1 != OPUS_OK) {
             throw OpusException(ret1);
+          } else if (ret2 != OPUS_OK) {
+            throw OpusException(ret2);
           }
         }
         return SimpleOpusEncoder._(encoder,

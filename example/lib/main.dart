@@ -61,6 +61,7 @@ class _MyAppState extends State<MyApp> {
                                 // print(
                                 //     "time to encode: ${stopwatch.elapsedMilliseconds}");
 
+                                print(p?.length);
                                 // stopwatch.start();
                                 ///模拟丢包
                                 Int16List? p1 = opusDecoder?.decode(

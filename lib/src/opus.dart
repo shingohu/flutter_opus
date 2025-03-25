@@ -351,8 +351,8 @@ class Opus {
 
   late final _opus_encoder_ctlPtr_int = _lookup<
       ffi.NativeFunction<
-          ffi.Int Function(
-              ffi.Pointer<OpusEncoder>, ffi.Int, ffi.Int)>>('opus_encoder_ctl');
+          ffi.Int Function(ffi.Pointer<OpusEncoder>, ffi.Int,
+              ffi.VarArgs<(ffi.Int32,)>)>>('opus_encoder_ctl');
   late final _opus_encoder_ctl_int = _opus_encoder_ctlPtr_int
       .asFunction<int Function(ffi.Pointer<OpusEncoder>, int, int)>();
 
