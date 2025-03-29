@@ -55,7 +55,7 @@ class SimpleOpusDecoder {
   /// Decodes an opus packet to s16le samples, represented as [Int16List].
   /// Use `null` as [input] to indicate packet loss.
   ///
-  /// On packet loss, the [loss] parameter needs to be exactly the duration
+  /// On packet loss, the [lossDuration] parameter needs to be exactly the duration
   /// of audio that is missing in milliseconds, otherwise the decoder will
   /// not be in the optimal state to decode the next incoming packet.
   /// If you don't know the duration, leave it `null` and [lastPacketDurationMs]
@@ -64,7 +64,7 @@ class SimpleOpusDecoder {
   /// If you want to use forward error correction, don't report packet loss
   /// by calling this method with `null` as input (unless it is a real packet
   /// loss), but instead, wait for the next packet and call this method with
-  /// the recieved packet, [fec] set to `true` and [loss] to the missing duration
+  /// the recieved packet, [fec] set to `true` and [lossDuration] to the missing duration
   /// of the missing audio in ms (as above). Then, call this method a second time with
   /// the same packet, but with [fec] set to `false`. You can read more about the
   /// correct usage of forward error correction [here](https://stackoverflow.com/questions/49427579/how-to-use-fec-feature-for-opus-codec).
@@ -73,11 +73,9 @@ class SimpleOpusDecoder {
   /// really lost. So for them, you have to report packet loss.
   ///
   /// The input bytes need to represent a whole packet!
-  Int16List decode({Uint8List? input, bool fec = false, int? loss}) {
+  Int16List decode({Uint8List? input, bool fec = false, int? lossDuration}) {
     if (_disposed) throw OpusException(OPUS_INVALID_STATE);
     return using((area) {
-      ffi.Pointer<ffi.Int16> outputNative =
-          area<ffi.Int16>(_maxSamplesPerPacket);
       ffi.Pointer<ffi.Uint8> inputNative;
       if (input != null) {
         inputNative = area<ffi.Uint8>(input.length);
@@ -88,10 +86,17 @@ class SimpleOpusDecoder {
       int frameSize;
       if (input == null || fec) {
         frameSize = _durationToSamples(
-            _estimateLoss(loss, lastPacketDurationMs), channels, sampleRate);
+            _estimateLoss(lossDuration, lastPacketDurationMs),
+            channels,
+            sampleRate);
+        if (frameSize > _maxSamplesPerPacket) {
+          // frameSize = _maxSamplesPerPacket;
+        }
       } else {
         frameSize = _maxSamplesPerPacket;
       }
+      ffi.Pointer<ffi.Int16> outputNative = area<ffi.Int16>(frameSize);
+
       int outputSamplesPerChannel = opus.opus_decode(
           _decoder,
           inputNative.cast<ffi.UnsignedChar>(),
@@ -99,7 +104,6 @@ class SimpleOpusDecoder {
           outputNative,
           frameSize,
           fec ? 1 : 0);
-
       if (outputSamplesPerChannel >= OPUS_OK) {
         _lastPacketDurationMs =
             _packetDuration(outputSamplesPerChannel, channels, sampleRate);

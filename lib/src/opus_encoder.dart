@@ -79,6 +79,23 @@ class SimpleOpusEncoder {
     });
   }
 
+  ///启用或者关闭FEC
+  bool enableFEC(bool enable, int lossPercent) {
+    if (_disposed) throw OpusException(OPUS_INVALID_STATE);
+    return using((area) {
+      int ret1 = opus.opus_encoder_ctl_int(
+          _encoder, OPUS_SET_INBAND_FEC_REQUEST, enable ? 0 : 1);
+      int ret2 = opus.opus_encoder_ctl_int(
+          _encoder, OPUS_SET_PACKET_LOSS_PERC_REQUEST, lossPercent);
+      if (ret1 != OPUS_OK) {
+        throw OpusException(ret1);
+      } else if (ret2 != OPUS_OK) {
+        throw OpusException(ret2);
+      }
+      return true;
+    });
+  }
+
   /**
    * encode audio data to opus data
    * 输入音频帧大小(Int16List)
