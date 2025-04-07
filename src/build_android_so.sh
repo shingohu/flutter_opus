@@ -19,7 +19,7 @@ do
     # 配置 CMake
     cmake -DCMAKE_TOOLCHAIN_FILE=$NDK_ROOT/build/cmake/android.toolchain.cmake \
           -DANDROID_ABI=$ABI \
-          -DOPUS_BUILD_PROGRAMS=ON \
+          -DOPUS_BUILD_PROGRAMS=OFF \
           -DOPUS_BUILD_SHARED_LIBS=ON \
           -DOPUS_BUILD_TESTING=OFF \
           -DOPUS_CUSTOM_MODES=OFF \

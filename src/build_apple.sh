@@ -25,18 +25,19 @@ if [ "$BUILD_IOS" = "ON" ]; then
   mkdir -p ios
   cd ios
 
-  cmake -G "Unix Makefiles" \
+  cmake -G "Xcode" \
             -DCMAKE_OSX_SYSROOT=$IOS_SDK_PATH \
             -DOPUS_BUILD_FRAMEWORK=ON \
             -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=12.0 \
             -DCMAKE_BUILD_TYPE=Release \
-            -DOPUS_BUILD_PROGRAMS=ON \
+            -DOPUS_BUILD_PROGRAMS=OFF \
             -DOPUS_BUILD_TESTING=OFF \
             -DOPUS_CUSTOM_MODES=OFF \
             -DCMAKE_OSX_ARCHITECTURES=$ARCHS_DEVICES_IPHONE \
             ../..
 
-  cmake --build .
+  cmake --build . --config Release
   cd ..
 
 fi
@@ -47,24 +48,26 @@ if [ "$BUILD_IOS_SIMULATOR" = "ON" ]; then
   mkdir -p ios-simulator
   cd ios-simulator
 
-  cmake -G "Unix Makefiles" \
+  cmake -G "Xcode" \
             -DCMAKE_OSX_SYSROOT=$SIMULATOR_SDK_PATH \
             -DOPUS_BUILD_FRAMEWORK=ON \
             -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=12.0 \
             -DCMAKE_BUILD_TYPE=Release \
-            -DOPUS_BUILD_PROGRAMS=ON \
+            -DOPUS_BUILD_PROGRAMS=OFF \
             -DOPUS_BUILD_TESTING=OFF \
             -DOPUS_CUSTOM_MODES=OFF \
             -DCMAKE_OSX_ARCHITECTURES=$ARCHS_SIMULATOR_IPHONE \
             ../..
 
-  cmake --build .
+  cmake --build . --config Release
   cd ..
 fi
 
 
-FRAMEWORK_DEVICE="ios/Opus.framework"
-FRAMEWORK_SIMULATOR="ios-simulator/Opus.framework"
+
+FRAMEWORK_DEVICE="ios/Release-iphoneos/Opus.framework"
+FRAMEWORK_SIMULATOR="ios-simulator/Release-iphonesimulator/Opus.framework"
 
 xcodebuild -create-xcframework \
 -framework "$FRAMEWORK_DEVICE" \
