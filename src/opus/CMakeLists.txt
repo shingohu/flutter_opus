@@ -742,3 +742,8 @@ if(BUILD_TESTING AND NOT BUILD_SHARED_LIBS)
           -P "${PROJECT_SOURCE_DIR}/cmake/RunTest.cmake")
   endif()
 endif()
+
+if (ANDROID)
+  # Support Android 15 16k page size
+  target_link_options(opus PRIVATE "-Wl,-z,max-page-size=16384")
+endif ()
