@@ -58,6 +58,14 @@ class _MyAppState extends State<MyApp> {
               children: [
                 TextButton(
                     onPressed: () {
+                      SimpleOpusEncoder opusEncoder = SimpleOpusEncoder(sampleRate: 8000, channels: 1, bitrate: 12000);
+                    },
+                    child: Text(
+                      '初始化',
+                      style: TextStyle(fontSize: 50),
+                    )),
+                TextButton(
+                    onPressed: () {
                       markToStop = false;
                       PCMRecorder.start(
                           preFrameSize: 960,
@@ -98,8 +106,7 @@ class _MyAppState extends State<MyApp> {
 
   void sendData(Uint8List pcm) {
     if (opusEncoder == null) {
-      opusEncoder =
-          SimpleOpusEncoder(sampleRate: 8000, channels: 1, bitrate: 12000);
+      opusEncoder = SimpleOpusEncoder(sampleRate: 8000, channels: 1, bitrate: 12000);
       if (openFEC) {
         opusEncoder?.enableFEC(true, (LOSS_RATE * 100).toInt());
       }
@@ -153,16 +160,14 @@ class _MyAppState extends State<MyApp> {
               if (loss > 0) {
                 if (openPLC) {
                   ///PLC 丢包补偿
-                  Int16List? plc = opusDecoder?.decode(
-                      input: null, fec: false, lossDuration: loss * 60);
+                  Int16List? plc = opusDecoder?.decode(input: null, fec: false, lossDuration: loss * 60);
                   if (plc != null) {
                     Uint8List newPlc = _shortToBytes(plc);
                     print("PLC恢复包长${newPlc.length}");
                     player.feed(newPlc);
                   }
                 } else if (openFEC) {
-                  Int16List? fec = opusDecoder?.decode(
-                      input: newData, fec: true, lossDuration: loss * 60);
+                  Int16List? fec = opusDecoder?.decode(input: newData, fec: true, lossDuration: loss * 60);
                   if (fec != null) {
                     Uint8List newFEC = _shortToBytes(fec);
                     print("FEC恢复包长${newFEC.length}");
@@ -170,8 +175,7 @@ class _MyAppState extends State<MyApp> {
                   }
                 }
               }
-              Uint8List newPcm =
-                  _shortToBytes(opusDecoder!.decode(input: newData));
+              Uint8List newPcm = _shortToBytes(opusDecoder!.decode(input: newData));
               player.feed(newPcm);
             } else if (markToStop) {
               print("停止播放");
@@ -191,8 +195,7 @@ class _MyAppState extends State<MyApp> {
       }
     }
     if (loss != 0) {
-      print(
-          "语音数据包可能丢失,期望index:${this.rxIndex + 1},当前index:$vIndex,丢失${loss}个包");
+      print("语音数据包可能丢失,期望index:${this.rxIndex + 1},当前index:$vIndex,丢失${loss}个包");
 
       ///这里到时看看是否需要做丢包补充
     }

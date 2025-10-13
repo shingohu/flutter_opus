@@ -1,0 +1,9 @@
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/opus.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/package.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/package_source.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/list_install_components.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/install.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/install/local.dir
+/Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/CMakeFiles/install/strip.dir

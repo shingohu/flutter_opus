@@ -1,0 +1,29 @@
+CMakeFiles/opus.dir/src/mapping_matrix.c.o: \
+  /Users/shingo/develop/hujie/opus/src/opus/src/mapping_matrix.c \
+  /Users/shingo/develop/hujie/opus/src/opus/ohos-so/armeabi-v7a/config.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/arch.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_types.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/stdint.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/stdint.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/arm-linux-ohos/bits/alltypes.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/arm-linux-ohos/bits/stdint.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_defines.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/float_cast.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/math.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/features.h \
+  /Users/shingo/develop/hujie/opus/src/opus/src/opus_private.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/celt.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_custom.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/entenc.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/stddef.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/entcode.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/limits.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/limits.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/arm-linux-ohos/bits/limits.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/ecintrin.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/entdec.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/stdarg.h \
+  /Users/shingo/develop/hujie/opus/src/opus/src/mapping_matrix.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_projection.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_multistream.h

@@ -1,0 +1,30 @@
+CMakeFiles/opus.dir/celt/laplace.c.o: \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/laplace.c \
+  /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/config.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/laplace.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/entenc.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/stddef.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/entcode.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_types.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/stdint.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/stdint.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos/bits/alltypes.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos/bits/stdint.h \
+  /Users/shingo/develop/hujie/opus/src/opus/include/opus_defines.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include/limits.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/limits.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/features.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos/bits/limits.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/ecintrin.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/math.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/arch.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/entdec.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/mathops.h \
+  /Users/shingo/develop/hujie/opus/src/opus/celt/os_support.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/string.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/strings.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/fortify/string.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/fortify/fortify.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/stdlib.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/alloca.h \
+  /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/fortify/stdlib.h

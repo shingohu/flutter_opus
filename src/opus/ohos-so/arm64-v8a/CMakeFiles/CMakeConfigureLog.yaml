@@ -1,0 +1,967 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The target system is: OHOS - 1 - aarch64
+      The host system is: Darwin - 24.6.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang 
+      Build flags: -fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-fno-addrsig;-Wa,--noexecstack;-Wformat;-Werror=format-security;-D__MUSL__
+      Id flags: -c;--target=aarch64-linux-ohos 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6ce69/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6ce69.dir/build.make CMakeFiles/cmTC_6ce69.dir/build
+        Building C object CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  -fPIE   -v -MD -MT CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeCCompilerABI.c
+        OHOS (dev) clang version 15.0.4 (llvm-project bb5cdf0f93bfb5316dd3cc2a80d12ab829e49b43)
+        Target: aarch64-unknown-linux-ohos
+        Thread model: posix
+        InstalledDir: /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+         (in-process)
+         "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang" -cc1 -triple aarch64-unknown-linux-ohos -emit-obj -mrelax-all --mrelax-relocations -mnoexecstack -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ -resource-dir /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4 -dependency-file CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -sys-header-deps -D __MUSL__ -isysroot /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -internal-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include -internal-externc-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos -internal-externc-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/include -internal-externc-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include -Wformat -fdebug-compilation-dir=/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 15.0.4 based upon LLVM 15.0.4 default target arm64-apple-darwin24.6.0
+        ignoring nonexistent directory "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include
+         /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos
+         /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include
+        End of search list.
+        Linking C executable cmTC_6ce69
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ce69.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections  -v CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -o cmTC_6ce69
+        OHOS (dev) clang version 15.0.4 (llvm-project bb5cdf0f93bfb5316dd3cc2a80d12ab829e49b43)
+        Target: aarch64-unknown-linux-ohos
+        Thread model: posix
+        InstalledDir: /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin
+         "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/ld.lld" --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-musl-aarch64.so.1 -o cmTC_6ce69 /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/Scrt1.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crti.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtbegin.o -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/ -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/../lib/aarch64-linux-ohos/ -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/ --build-id=sha1 --warn-shared-textrel --fatal-warnings -lunwind --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a -l:libunwind.a -lc /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a -l:libunwind.a /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtend.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crtn.o
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include]
+          add: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos]
+          add: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include]
+        collapse include dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos]
+        collapse include dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include]
+        implicit include dirs: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6ce69/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6ce69.dir/build.make CMakeFiles/cmTC_6ce69.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa --noexecstack -Wformat  -D__MUSL__  -fPIE   -v -MD -MT CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [OHOS (dev) clang version 15.0.4 (llvm-project bb5cdf0f93bfb5316dd3cc2a80d12ab829e49b43)]
+        ignore line: [Target: aarch64-unknown-linux-ohos]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin]
+        ignore line: [clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang" -cc1 -triple aarch64-unknown-linux-ohos -emit-obj -mrelax-all --mrelax-relocations -mnoexecstack -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=1 -target-cpu generic -target-feature +neon -target-feature +v8a -target-feature +fix-cortex-a53-835769 -target-abi aapcs -fallow-half-arguments-and-returns -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ -resource-dir /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4 -dependency-file CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -sys-header-deps -D __MUSL__ -isysroot /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -internal-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include -internal-externc-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos -internal-externc-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/include -internal-externc-isystem /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include -Wformat -fdebug-compilation-dir=/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-lmDlUJ -ferror-limit 19 -stack-protector 2 -fno-signed-char -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 15.0.4 based upon LLVM 15.0.4 default target arm64-apple-darwin24.6.0]
+        ignore line: [ignoring nonexistent directory "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/include]
+        ignore line: [ /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include/aarch64-linux-ohos]
+        ignore line: [ /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_6ce69]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ce69.dir/link.txt --verbose=1]
+        ignore line: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections  -v CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o -o cmTC_6ce69]
+        ignore line: [OHOS (dev) clang version 15.0.4 (llvm-project bb5cdf0f93bfb5316dd3cc2a80d12ab829e49b43)]
+        ignore line: [Target: aarch64-unknown-linux-ohos]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin]
+        link line: [ "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/ld.lld" --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -pie -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=4096 --hash-style=gnu --hash-style=both --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /lib/ld-musl-aarch64.so.1 -o cmTC_6ce69 /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/Scrt1.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crti.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtbegin.o -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/ -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/../lib/aarch64-linux-ohos/ -L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/ --build-id=sha1 --warn-shared-textrel --fatal-warnings -lunwind --no-undefined -z noexecstack --gc-sections CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a -l:libunwind.a -lc /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a -l:libunwind.a /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtend.o /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crtn.o]
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/ld.lld] ==> ignore
+          arg [--sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-zmax-page-size=4096] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [aarch64linux] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-aarch64.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6ce69] ==> ignore
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/Scrt1.o] ==> obj [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/Scrt1.o]
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crti.o] ==> obj [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crti.o]
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtbegin.o] ==> obj [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtbegin.o]
+          arg [-L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos] ==> dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos]
+          arg [-L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/] ==> dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/]
+          arg [-L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/../lib/aarch64-linux-ohos/] ==> dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/../lib/aarch64-linux-ohos/]
+          arg [-L/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/] ==> dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/]
+          arg [--build-id=sha1] ==> ignore
+          arg [--warn-shared-textrel] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-undefined] ==> ignore
+          arg [-znoexecstack] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [CMakeFiles/cmTC_6ce69.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a] ==> lib [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-lc] ==> lib [c]
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a] ==> lib [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtend.o] ==> obj [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtend.o]
+          arg [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crtn.o] ==> obj [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crtn.o]
+        linker tool for 'C': /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/ld.lld
+        remove lib [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a]
+        remove lib [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/libclang_rt.builtins.a]
+        collapse library dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos]
+        collapse library dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib]
+        collapse library dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/../lib/aarch64-linux-ohos/] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/aarch64-linux-ohos]
+        collapse library dir [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/] ==> [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos]
+        implicit libs: [unwind;-l:libunwind.a;c;-l:libunwind.a]
+        implicit objs: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/Scrt1.o;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crti.o;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtbegin.o;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos/clang_rt.crtend.o;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos/crtn.o]
+        implicit dirs: [/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/clang/15.0.4/lib/aarch64-linux-ohos;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/lib/aarch64-linux-ohos;/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot/usr/lib/aarch64-linux-ohos]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/ld.lld" "-v"
+      LLD 15.0.4 (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake/CFeatureCheck.cmake:30 (try_compile)"
+      - "cmake/OpusConfig.cmake:27 (c_feature_check)"
+      - "CMakeLists.txt:11 (include)"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeTmp"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "COMPILE_VLA_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8ed04/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8ed04.dir/build.make CMakeFiles/cmTC_8ed04.dir/build
+        Building C object CMakeFiles/cmTC_8ed04.dir/vla.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_8ed04.dir/vla.c.o -MF CMakeFiles/cmTC_8ed04.dir/vla.c.o.d -o CMakeFiles/cmTC_8ed04.dir/vla.c.o -c /Users/shingo/develop/hujie/opus/src/opus/cmake/vla.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_8ed04
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ed04.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_8ed04.dir/vla.c.o -o cmTC_8ed04  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusConfig.cmake:30 (check_include_file)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for alloca.h"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Up46Mn"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Up46Mn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "HAVE_ALLOCA_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Up46Mn'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4825a/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4825a.dir/build.make CMakeFiles/cmTC_4825a.dir/build
+        Building C object CMakeFiles/cmTC_4825a.dir/CheckIncludeFile.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_4825a.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_4825a.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_4825a.dir/CheckIncludeFile.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Up46Mn/CheckIncludeFile.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_4825a
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4825a.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_4825a.dir/CheckIncludeFile.c.o -o cmTC_4825a  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/OpusConfig.cmake:35 (check_symbol_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for alloca"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-z3MpXR"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-z3MpXR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "USE_ALLOCA_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-z3MpXR'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f2398/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f2398.dir/build.make CMakeFiles/cmTC_f2398.dir/build
+        Building C object CMakeFiles/cmTC_f2398.dir/CheckSymbolExists.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_f2398.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_f2398.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_f2398.dir/CheckSymbolExists.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-z3MpXR/CheckSymbolExists.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_f2398
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2398.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_f2398.dir/CheckSymbolExists.c.o -o cmTC_f2398  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "cmake/OpusConfig.cmake:43 (check_library_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for floor in m"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-PmjR02"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-PmjR02"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-PmjR02'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_01943/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_01943.dir/build.make CMakeFiles/cmTC_01943.dir/build
+        Building C object CMakeFiles/cmTC_01943.dir/CheckFunctionExists.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__ -DCHECK_FUNCTION_EXISTS=floor -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_01943.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_01943.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_01943.dir/CheckFunctionExists.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-PmjR02/CheckFunctionExists.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-PmjR02/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'floor' [-Wincompatible-library-redeclaration]
+          CHECK_FUNCTION_EXISTS(void);
+          ^
+        <command line>:2:31: note: expanded from here
+        #define CHECK_FUNCTION_EXISTS floor
+                                      ^
+        /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-PmjR02/CheckFunctionExists.c:7:3: note: 'floor' is a builtin with type 'double (double)'
+        <command line>:2:31: note: expanded from here
+        #define CHECK_FUNCTION_EXISTS floor
+                                      ^
+        1 warning generated.
+        Linking C executable cmTC_01943
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01943.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__ -DCHECK_FUNCTION_EXISTS=floor --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_01943.dir/CheckFunctionExists.c.o -o cmTC_01943  -lm -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/OpusConfig.cmake:49 (check_symbol_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for lrintf"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XLTd4U"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XLTd4U"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "HAVE_LRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XLTd4U'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0f23d/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0f23d.dir/build.make CMakeFiles/cmTC_0f23d.dir/build
+        Building C object CMakeFiles/cmTC_0f23d.dir/CheckSymbolExists.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_0f23d.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_0f23d.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_0f23d.dir/CheckSymbolExists.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XLTd4U/CheckSymbolExists.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_0f23d
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f23d.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_0f23d.dir/CheckSymbolExists.c.o -o cmTC_0f23d  -lm -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "cmake/OpusConfig.cmake:50 (check_symbol_exists)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for lrint"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Pb4XmS"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Pb4XmS"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "HAVE_LRINT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Pb4XmS'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ec05b/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ec05b.dir/build.make CMakeFiles/cmTC_ec05b.dir/build
+        Building C object CMakeFiles/cmTC_ec05b.dir/CheckSymbolExists.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_ec05b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ec05b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ec05b.dir/CheckSymbolExists.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Pb4XmS/CheckSymbolExists.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_ec05b
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec05b.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_ec05b.dir/CheckSymbolExists.c.o -o cmTC_ec05b  -lm -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "cmake/OpusFunctions.cmake:139 (check_include_file)"
+      - "cmake/OpusConfig.cmake:70 (opus_detect_neon)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Looking for arm_neon.h"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GFMOdt"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GFMOdt"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "HAVE_ARM_NEON_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GFMOdt'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8a668/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8a668.dir/build.make CMakeFiles/cmTC_8a668.dir/build
+        Building C object CMakeFiles/cmTC_8a668.dir/CheckIncludeFile.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot   -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE -MD -MT CMakeFiles/cmTC_8a668.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_8a668.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_8a668.dir/CheckIncludeFile.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GFMOdt/CheckIncludeFile.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_8a668
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a668.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_8a668.dir/CheckIncludeFile.c.o -o cmTC_8a668  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusConfig.cmake:88 (check_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test FAST_MATH_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GcP1aM"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GcP1aM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "FAST_MATH_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GcP1aM'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72c93/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_72c93.dir/build.make CMakeFiles/cmTC_72c93.dir/build
+        Building C object CMakeFiles/cmTC_72c93.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DFAST_MATH_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -ffast-math -MD -MT CMakeFiles/cmTC_72c93.dir/src.c.o -MF CMakeFiles/cmTC_72c93.dir/src.c.o.d -o CMakeFiles/cmTC_72c93.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-GcP1aM/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_72c93
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72c93.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_72c93.dir/src.c.o -o cmTC_72c93  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusConfig.cmake:89 (check_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test STACK_PROTECTOR_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XdiFCo"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XdiFCo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "STACK_PROTECTOR_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XdiFCo'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bfd38/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bfd38.dir/build.make CMakeFiles/cmTC_bfd38.dir/build
+        Building C object CMakeFiles/cmTC_bfd38.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DSTACK_PROTECTOR_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -fstack-protector-strong -MD -MT CMakeFiles/cmTC_bfd38.dir/src.c.o -MF CMakeFiles/cmTC_bfd38.dir/src.c.o.d -o CMakeFiles/cmTC_bfd38.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-XdiFCo/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_bfd38
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfd38.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_bfd38.dir/src.c.o -o cmTC_bfd38  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusFunctions.cmake:46 (check_c_compiler_flag)"
+      - "cmake/OpusConfig.cmake:90 (check_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test HIDDEN_VISIBILITY_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-WKkpPs"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-WKkpPs"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "HIDDEN_VISIBILITY_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-WKkpPs'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53a66/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_53a66.dir/build.make CMakeFiles/cmTC_53a66.dir/build
+        Building C object CMakeFiles/cmTC_53a66.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DHIDDEN_VISIBILITY_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -fvisibility=hidden -MD -MT CMakeFiles/cmTC_53a66.dir/src.c.o -MF CMakeFiles/cmTC_53a66.dir/src.c.o.d -o CMakeFiles/cmTC_53a66.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-WKkpPs/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_53a66
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53a66.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_53a66.dir/src.c.o -o cmTC_53a66  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test Wall_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-b4axZq"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-b4axZq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "Wall_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-b4axZq'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_25448/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_25448.dir/build.make CMakeFiles/cmTC_25448.dir/build
+        Building C object CMakeFiles/cmTC_25448.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DWall_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -Wall -MD -MT CMakeFiles/cmTC_25448.dir/src.c.o -MF CMakeFiles/cmTC_25448.dir/src.c.o.d -o CMakeFiles/cmTC_25448.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-b4axZq/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_25448
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25448.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_25448.dir/src.c.o -o cmTC_25448  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test W_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-tqtun5"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-tqtun5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "W_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-tqtun5'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf78b/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_bf78b.dir/build.make CMakeFiles/cmTC_bf78b.dir/build
+        Building C object CMakeFiles/cmTC_bf78b.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DW_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -W -MD -MT CMakeFiles/cmTC_bf78b.dir/src.c.o -MF CMakeFiles/cmTC_bf78b.dir/src.c.o.d -o CMakeFiles/cmTC_bf78b.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-tqtun5/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_bf78b
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf78b.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_bf78b.dir/src.c.o -o cmTC_bf78b  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test Wstrictprototypes_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-ga57M6"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-ga57M6"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "Wstrictprototypes_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-ga57M6'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5858/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d5858.dir/build.make CMakeFiles/cmTC_d5858.dir/build
+        Building C object CMakeFiles/cmTC_d5858.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DWstrictprototypes_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -Wstrict-prototypes -MD -MT CMakeFiles/cmTC_d5858.dir/src.c.o -MF CMakeFiles/cmTC_d5858.dir/src.c.o.d -o CMakeFiles/cmTC_d5858.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-ga57M6/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_d5858
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5858.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_d5858.dir/src.c.o -o cmTC_d5858  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test Wextra_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-iRw36j"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-iRw36j"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "Wextra_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-iRw36j'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e5c92/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e5c92.dir/build.make CMakeFiles/cmTC_e5c92.dir/build
+        Building C object CMakeFiles/cmTC_e5c92.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DWextra_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -Wextra -MD -MT CMakeFiles/cmTC_e5c92.dir/src.c.o -MF CMakeFiles/cmTC_e5c92.dir/src.c.o.d -o CMakeFiles/cmTC_e5c92.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-iRw36j/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_e5c92
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5c92.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_e5c92.dir/src.c.o -o cmTC_e5c92  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test Wcastalign_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Qxu4dj"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Qxu4dj"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "Wcastalign_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Qxu4dj'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7c283/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7c283.dir/build.make CMakeFiles/cmTC_7c283.dir/build
+        Building C object CMakeFiles/cmTC_7c283.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DWcastalign_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -Wcast-align -MD -MT CMakeFiles/cmTC_7c283.dir/src.c.o -MF CMakeFiles/cmTC_7c283.dir/src.c.o.d -o CMakeFiles/cmTC_7c283.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-Qxu4dj/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_7c283
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c283.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_7c283.dir/src.c.o -o cmTC_7c283  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test Wnestedexterns_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-URQAEo"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-URQAEo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "Wnestedexterns_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-URQAEo'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_195d1/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_195d1.dir/build.make CMakeFiles/cmTC_195d1.dir/build
+        Building C object CMakeFiles/cmTC_195d1.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DWnestedexterns_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -Wnested-externs -MD -MT CMakeFiles/cmTC_195d1.dir/src.c.o -MF CMakeFiles/cmTC_195d1.dir/src.c.o.d -o CMakeFiles/cmTC_195d1.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-URQAEo/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_195d1
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_195d1.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_195d1.dir/src.c.o -o cmTC_195d1  -lm
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/OpusConfig.cmake:113 (check_c_compiler_flag)"
+      - "CMakeLists.txt:11 (include)"
+    checks:
+      - "Performing Test Wshadow_SUPPORTED"
+    directories:
+      source: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-DzieDd"
+      binary: "/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-DzieDd"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_CXX_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_COMPILER_EXTERNAL_TOOLCHAIN: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm"
+      CMAKE_C_COMPILER_TARGET: "aarch64-linux-ohos"
+      CMAKE_C_FLAGS: "-fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -fno-limit-debug-info "
+      CMAKE_EXE_LINKER_FLAGS: "--rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections "
+      CMAKE_MODULE_PATH: "/Users/shingo/develop/hujie/opus/src/opus/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot"
+      OHOS_ARCH: "arm64-v8a"
+      OHOS_PLATFORM: "OHOS"
+      OHOS_SDK_NATIVE: "/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native"
+      OHOS_TOOLCHAIN: "clang"
+    buildResult:
+      variable: "Wshadow_SUPPORTED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-DzieDd'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cba2f/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cba2f.dir/build.make CMakeFiles/cmTC_cba2f.dir/build
+        Building C object CMakeFiles/cmTC_cba2f.dir/src.c.o
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -DWshadow_SUPPORTED  -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  -std=gnu99 -fPIE   -Wshadow -MD -MT CMakeFiles/cmTC_cba2f.dir/src.c.o -MF CMakeFiles/cmTC_cba2f.dir/src.c.o.d -o CMakeFiles/cmTC_cba2f.dir/src.c.o -c /Users/shingo/develop/hujie/opus/src/opus/ohos-so/arm64-v8a/CMakeFiles/CMakeScratch/TryCompile-DzieDd/src.c
+        clang: warning: argument unused during compilation: '--gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm' [-Wunused-command-line-argument]
+        Linking C executable cmTC_cba2f
+        /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba2f.dir/link.txt --verbose=1
+        /Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm/bin/clang --target=aarch64-linux-ohos --gcc-toolchain=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/llvm --sysroot=/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/native/sysroot -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -D__MUSL__  --rtlib=compiler-rt -fuse-ld=lld -Wl,--build-id=sha1 -Wl,--warn-shared-textrel -Wl,--fatal-warnings -lunwind -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,--gc-sections   CMakeFiles/cmTC_cba2f.dir/src.c.o -o cmTC_cba2f  -lm
+        
+      exitCode: 0
+...
